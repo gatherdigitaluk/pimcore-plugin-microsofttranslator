@@ -3,7 +3,7 @@
     "description": "A Plugin to provide access to Microsoft translate service for Pimcore 4",
     "type": "pimcore-plugin",
     "license": "GPL-3.0+",
-    "keywords": ["pimcore","semantics","plugin"],
+    "keywords": ["pimcore","translator","microsoft","plugin","azure"],
     "homepage": "https://www.gatherdigital.co.uk",
     "authors": [
         {
