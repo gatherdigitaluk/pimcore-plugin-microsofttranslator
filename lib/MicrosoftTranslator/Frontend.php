@@ -55,7 +55,7 @@ class Frontend
 
         //get the default language of the current request
         if (\Zend_Registry::isRegistered('Zend_Locale')) {
-            $this->currentLocale = Zend_Registry::get('Zend_Locale')->getLanguage();
+            $this->currentLocale = \Zend_Registry::get('Zend_Locale')->getLanguage();
         } else {
             throw new \Exception('No default locale specified!');
         }
