@@ -26,7 +26,7 @@ class Plugin extends AbstractPlugin implements PluginInterface
                 (
                     `name` varchar(32) DEFAULT NULL,
                     `value` varchar(255) DEFAULT NULL,
-                    PRIMARY KEY  (`name`)
+                    UNIQUE (`name`)
                 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;";
 
         $result = \Pimcore\Db::get()->query($sql);
