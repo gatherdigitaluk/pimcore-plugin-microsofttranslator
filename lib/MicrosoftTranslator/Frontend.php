@@ -86,6 +86,10 @@ class Frontend
      */
     public function translate($input, $isHtml=false)
     {
+        if (is_null($input)) {
+            return '';
+        }
+
         if (!$this->translator) {
             return $input; //return the input, no need to translate
         }
